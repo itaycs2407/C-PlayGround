@@ -14,9 +14,14 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+
+            TeleBot tb = new TeleBot();
+            Console.ReadLine();
+            /*
             WebScraper ws = new WebScraper();
             ws.Run();
-            Console.ReadLine();
+            Console.ReadLine();*/
+
             /*
             Smtp mailSender = new Smtp();
             mailSender.define();
