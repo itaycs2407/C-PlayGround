@@ -27,11 +27,11 @@ namespace ConsoleApp1
                 
             };
             MailAddress FromEmail = new MailAddress("icdnr10@gmail.com", "testMailSender");
-            MailAddress ToEmail = new MailAddress("itayco@trunovate.com", "testMailReciver");
+            MailAddress ToEmail = new MailAddress("itayco@trunovate.com", "welcome to momo spamer!!!");
             m_Message = new MailMessage()
             {
                 From = FromEmail,
-                Subject = "test mail try",
+                Subject = "momo spamer",
                 Body = "this is the text message"
             };
             m_Message.To.Add(ToEmail);

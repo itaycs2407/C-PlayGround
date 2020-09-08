@@ -14,10 +14,15 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            WebScraper ws = new WebScraper();
+            ws.Run();
+            Console.ReadLine();
+            /*
             Smtp mailSender = new Smtp();
             mailSender.define();
             mailSender.sendMail();
             Console.ReadLine();
+            */
             /*
             subMarine sm = new subMarine();
             Console.ReadLine();*/
