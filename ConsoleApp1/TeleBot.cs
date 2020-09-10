@@ -30,7 +30,11 @@ namespace ConsoleApp1
             {
                 Console.WriteLine($"recived text : {e.Message.Chat.Id} {e.Message.Text }");
 
-                await tBot.SendTextMessageAsync(chatId: e.Message.Chat, text: "answer!!");
+                await tBot.SendTextMessageAsync(chatId: e.Message.Chat, text: "answer!!" +  e.Message.Text  );
+                if (e.Message.Text.Contains("ok"))
+                {
+                    Console.WriteLine("OK!");
+                }
             }
         }
     }

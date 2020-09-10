@@ -15,8 +15,25 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
 
+
+          
+                Excel excel = new Excel(@"c:\1.xlsx", 1);
+                excel.ReadCell(0, 0);
+                excel.ReadCell(0, 1);
+                excel.ReadCell(0, 2);
+                excel.ReadCell(0, 3);
+                excel.ReadCell(1, 0);
+                excel.ReadCell(1, 1);
+                excel.ReadCell(1, 2);
+                excel.ReadCell(1, 3);
+            Console.ReadLine();
+            
+
+            
+            /*
             TeleBot tb = new TeleBot();
             Console.ReadLine();
+            */
             /*
             WebScraper ws = new WebScraper();
             ws.Run();
