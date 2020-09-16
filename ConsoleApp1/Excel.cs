@@ -14,6 +14,7 @@ namespace ConsoleApp1
         _Application excel = new ExcelObj.Application();
         Workbook wb;
         Worksheet ws;
+        
 
         public Excel(string i_Path, int i_Sheet)
         {
@@ -29,6 +30,7 @@ namespace ConsoleApp1
             if (ws.Cells[i_Row,i_Col].Value2 != null)
             {
                 Console.WriteLine(ws.Cells[i_Row, i_Col].Value2);
+              
                 return "OK";
             }
             else
@@ -37,6 +39,9 @@ namespace ConsoleApp1
             }
         }
 
-        
+        internal void closeConnection()
+        {
+            wb.Close();
+        }
     }
 }
